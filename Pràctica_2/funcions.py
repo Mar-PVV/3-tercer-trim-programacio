@@ -3,11 +3,10 @@ import random
 def jugar_partida(canvi):
     guanyador = random.randint(1,3)
 
-    porta_triada = int(input('Quina porta vols triar? 1, 2 o 3? '))
+    porta_triada = random.randint(1,3)
 
     porta_ensenyada = None
 
-    canvia = False
     guanya = False
 
     if guanyador == porta_triada:
@@ -26,15 +25,15 @@ def jugar_partida(canvi):
         print(f'Oh! Has triat la porta {porta_triada}. Doncs t\'informo que la porta 3 tenia una cabra!')
         porta_ensenyada = 3
 
-    canvi = input('Vols canviar la porta triada? <si/no> ')
-
-    if canvi == 'si':
-        canvia = True
+    if canvi:
         llista = [1, 2, 3]
         llista.remove(porta_triada)
         llista.remove(porta_ensenyada)
         porta_triada = llista[0]
         print(f'Has canviat la porta, ara la que has triat és la {porta_triada}.')
+    else:
+        print(f'No has canviat la porta, la porta triada és la {porta_triada}.')
+
 
     if porta_triada == guanyador:
         guanya = True
@@ -42,4 +41,4 @@ def jugar_partida(canvi):
     else:
         print('Oooh! Has perdut...')
 
-
+    return guanya
