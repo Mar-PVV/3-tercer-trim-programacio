@@ -1,5 +1,7 @@
 # Part Pràctica
 
+Fes captures de pantalla dels resultats de cada exercici per tal de fer el README de la pràctica.
+
 ## Exercici 1: Creació d'objectes primitius
 
 **Objectiu**: Crear objectes primitius utilitzant operadors de la llibreria `bpy`.
@@ -12,8 +14,6 @@
 
 Fes servir `bpy.ops.mesh.primitive_cube_add()`, `bpy.ops.mesh.primitive_uv_sphere_add()`, i `bpy.ops.mesh.primitive_cylinder_add()` per crear els objectes.
 
-Fes captura de pantalla de la imatge obtinguda per tal de fer el README de la pràctica.
-
 ## Exercici 2: Modificar les propietats d'un objecte
 
 **Objectiu**: Modificar les propietats d'un objecte primitiu afegit.
@@ -24,8 +24,6 @@ Fes captura de pantalla de la imatge obtinguda per tal de fer el README de la pr
 2. Modifica la ubicació del cub a `(1, 2, 0)`, la rotació a `(0, 0, 1.57)` i l'escala a `(1, 1, 0.5)`.
 
 Utilitza `object.location`, `object.rotation_euler` i `object.scale`.
-
-Fes captura de pantalla de la imatge obtinguda per tal de fer el README de la pràctica.
 
 ## Exercici 3: Animar un objecte
 
