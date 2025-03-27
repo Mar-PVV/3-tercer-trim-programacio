@@ -139,7 +139,7 @@ bpy.context.scene.render.fps = 24  # Ajustar a 24 fotogrames per segon
 
 La fórmula per determinar el nombre de fotogrames és:
 
-$ n = t \times FPS $
+$$ n = t \cdot FPS $$
 
 Si un moviment ha de durar 2.5 segons en una escena a 30 FPS:
 
