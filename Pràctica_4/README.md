@@ -68,6 +68,19 @@ obj.scale = (2, 2, 2)
 obj.rotation_euler = (0, 0, 3.14 / 2)
 ```
 
+Exemple complert:
+
+```python
+import bpy
+
+bpy.ops.object.select_all(action='SELECT')
+bpy.ops.object.delete(use_global=True)
+
+bpy.ops.mesh.primitive_cube_add(location=(0,0,0))
+bloc = bpy.context.object
+bloc.location = (2,0,2)
+```
+
 ### 3. `bpy.data` – Accés a dades
 
 Aquest mòdul permet accedir a tots els elements de l'escena i modificar-los directament.
@@ -158,7 +171,6 @@ El temps en segons el podrem calcular de la següent manera:
 $$ t [segons] = n_{fotograma} \cdot \frac{1}{FPS} $$
 
 Fixa't en els següents exemples que en les animacions sempre tindrem la mateixa estructura:
-
 
 ```python
 fps = bpy.context.scene.render.fps
