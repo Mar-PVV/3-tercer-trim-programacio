@@ -151,7 +151,25 @@ num_fotogrames = temps * fps  # 75 fotogrames
 
 ### Aplicació de lleis físiques en animació
 
-Si volem aplicar lleis físiques amb precisió, hem de tenir en compte el factor temps:
+Si volem aplicar lleis físiques amb precisió, hem de tenir en compte el factor temps.
+
+El temps en segons el podrem calcular de la següent manera:
+
+$$ t [segons] = n_fotograma \cdot \frac{1}{FPS} $$
+
+Fixa't en els següents exemples que en les animacions sempre tindrem la mateixa estructura:
+
+
+```python
+fps = bpy.context.scene.render.fps
+interval = 1 / fps
+duracio = 5 #segons
+# Altres dades
+
+for i in range(0, duracio * fps):  # Càlcul del moviment per cada fotograma de 0 al nombre total de fotogrames segons els segons de duració (duracio * fps).
+    # Canvis en el moviment
+    objecte.keyframe_insert(data_path="location", frame=i) # Guardem a cada frame el canvi del moviment 
+```
 
 #### Exemple de MRU (Moviment Rectilini Uniforme)
 
@@ -189,3 +207,16 @@ for i in range(0, 5 * fps):  # Moviment durant 5 segons
 ## Part pràctica
 
 Consulta els exercicis per consolidar la teoria vista [aquí](./Part_pràctica.md).
+
+Recorda afegir sempre:
+
+```python
+import bpy
+
+bpy.ops.object.select_all(action='SELECT')
+bpy.ops.object.delete(use_global=True)
+```
+
+## Més informació
+
+Pots consultar més informació de la llibreria `bpy` [aquí](https://docs.blender.org/api/current/index.html).
