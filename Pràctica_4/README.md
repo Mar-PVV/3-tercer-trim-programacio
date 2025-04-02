@@ -155,7 +155,7 @@ Si volem aplicar lleis físiques amb precisió, hem de tenir en compte el factor
 
 El temps en segons el podrem calcular de la següent manera:
 
-$$ t [segons] = n_fotograma \cdot \frac{1}{FPS} $$
+$$ t [segons] = n_{fotograma} \cdot \frac{1}{FPS} $$
 
 Fixa't en els següents exemples que en les animacions sempre tindrem la mateixa estructura:
 
