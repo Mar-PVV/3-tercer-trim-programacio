@@ -54,7 +54,7 @@ Crear un objecte (el que tu vulguis) que es desplaci en línia recta amb velocit
 - Velocitat: `v = 2` unitats/s
 - Temps total: `5` segons
 
-## Exercici 2: MRUA – Moviment rectilini accelerat
+## Exercici 2: MRUA – Moviment rectilini uniformament accelerat
 
 **Objectiu**:  
 Crear un objecte que s’acceleri al llarg de l’eix Y, partint del repòs.
@@ -66,7 +66,7 @@ Crear un objecte que s’acceleri al llarg de l’eix Y, partint del repòs.
 - Acceleració: `a = 1.5` unitats/s²
 - Temps total: `4` segons
 
-### Exercici 3: Caiguda lliure
+## Exercici 3: Caiguda lliure
 
 **Objectiu**:  
 Simular la caiguda d’un objecte a causa de la gravetat, sense velocitat inicial.
@@ -81,7 +81,7 @@ Simular la caiguda d’un objecte a causa de la gravetat, sense velocitat inicia
 
 - Prova-ho per altres alçades per comprovar que para un cop arriba a `z=0`.
 
-### Exercici 4: Tir parabòlic
+## Exercici 4: Tir parabòlic
 
 **Objectiu**:  
 Simular el moviment d’un objecte llançat en angle, generant una trajectòria parabòlica.
@@ -94,7 +94,7 @@ Simular el moviment d’un objecte llançat en angle, generant una trajectòria 
 - Acceleració gravitatòria: `g = -9.81` unitats/s²
 - Temps total: fins que arribi a `z=0`
 
-### Exercici 5: Tir parabòlic amb angles diferents
+## Exercici 5: Tir parabòlic amb angles diferents
 
 **Objectiu**:  
 Col·locar 5 objectes alineats a l’eix X i fer que cadascun realitzi un tir parabòlic amb el mateix valor de velocitat inicial però amb **angles diferents** de llançament.
@@ -107,7 +107,7 @@ Col·locar 5 objectes alineats a l’eix X i fer que cadascun realitzi un tir pa
 - Acceleració gravitatòria: `g = -9.81` unitats/s²
 - Durada de l’animació: fins que cada objecte arribi a `z=0`
 
-### Exercici 6: Tir parabòlic amb velocitats inicials diferents
+## Exercici 6: Tir parabòlic amb velocitats inicials diferents
 
 **Objectiu**:  
 Col·locar 5 objectes alineats a l’eix X i fer que cadascun realitzi un tir parabòlic amb el **mateix angle de llançament** però amb **velocitats inicials diferents**.
