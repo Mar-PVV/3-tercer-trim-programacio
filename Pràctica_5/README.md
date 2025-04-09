@@ -144,5 +144,5 @@ for i in range(0, duracio * fps):  # Càlcul del moviment per cada fotograma de 
     t = i * interval
     # Actualització en el moviment de l'objecte utilitzant les formules adequades.
 
-    objecte.keyframe_insert(data_path="location", frame=i) # Guardem a cada frame el canvi del moviment 
+    bloc.keyframe_insert(data_path="location", frame=i) # Guardem a cada frame el canvi del moviment 
 ```
