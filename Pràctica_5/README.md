@@ -135,12 +135,13 @@ bloc = bpy.context.object
 
 # Condicions pel moviment amb Blender:
 fps = bpy.context.scene.render.fps
-interval = 1 / fps
+interval = 1 / fps # En segons
 duracio = 5 #segons. En alguns casos no es necessitarà.
 
 
 for i in range(0, duracio * fps):  # Càlcul del moviment per cada fotograma de 0 al nombre total de fotogrames segons els segons de duració (duracio * fps). En alguns casos s'haurà de canviar el for per un altre tipus de bucle.
 
+    t = i * interval
     # Actualització en el moviment de l'objecte utilitzant les formules adequades.
 
     objecte.keyframe_insert(data_path="location", frame=i) # Guardem a cada frame el canvi del moviment 
