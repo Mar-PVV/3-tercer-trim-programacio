@@ -94,4 +94,28 @@ Crear un objecte (el que tu vulguis) que es desplaci seguint un MCU en el pla XY
 
 Llegir el següent [link](https://ca.wikipedia.org/wiki/Efecte_estrobosc%C3%B2pic#Efecte_roda_de_vag%C3%B3).
 
+**Objectiu**:  
+Crear quatre objectes, un de color diferenciat, que es desplacin seguint un MCU en el pla XY. Anar augmentant la velocitat angular fins a observar l'efecte roda de vagó, entre d'altres.
 
+**Condicions**:
+
+- Posició inicial dels quatre objectes:
+
+$$(x_0,y_0,z_0)=(10,0,0)$$
+$$(x_0,y_0,z_0)=(0,10,0)$$
+$$(x_0,y_0,z_0)=(-10,0,0)$$
+$$(x_0,y_0,z_0)=(0,-10,0)$$
+
+- L'objecte de la posició `(10,0,0)` de color diferent:
+
+```python
+mat = bpy.data.materials.new("PKHG")
+mat.diffuse_color = (1.0,0.0,0.0, 1.0) # (Vermell,Verd,Blau,Opacitat) - Valors del 0 a l'1.
+
+bpy.ops.mesh.primitive_cube_add(location=(10,0,0))
+bloc1 = bpy.context.object
+bloc1.active_material = mat
+```
+
+- Velocitat angular: $$\omega = \frac{\pi}{2} rad/s$$
+- Temps total: 30 segons (Actualitzeu el nombre de frames del visualitzador de 0 a 750 frames)
