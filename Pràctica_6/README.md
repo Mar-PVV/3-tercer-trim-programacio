@@ -1,4 +1,4 @@
-# Pràctica 5: Moviment circular amb Python i Blender
+# Pràctica 6: Moviment circular amb Python i Blender
 
 ## Fórmules de referència
 
