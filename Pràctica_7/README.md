@@ -41,7 +41,7 @@ $$
 
 On el coeficient de fregament dinàmic μd correspon a la força necessària per mantenir el cos en moviment una vegada iniciat.
 
-### Força neta o resultat
+### Força neta o resultant
 
 Suma de totes les forces que s'apliquen a un cos. En aquests exercicis, treballarem amb força aplicada al cos (una força externa) i amb la força de fricció, que per tant tindrem:
 
@@ -60,7 +60,10 @@ $$
 Quan la força neta sigui diferent a 0, tindrem acceleració i, per tant, el nostre cos seguirà un MRUA. Recordem: 
 
 $$
-v = v_0 + a \cdot t \\
+v = v_0 + a \cdot t
+$$
+
+$$
 x = x_0 + v_0 \cdot t + \frac{1}{2} a \cdot t^2
 $$
 
