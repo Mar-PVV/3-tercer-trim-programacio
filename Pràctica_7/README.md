@@ -147,6 +147,6 @@ Simular el moviment d’un objecte per un pla inclinat, tenint en compte la fric
 - Massa `m = 2 kg`
 - Velocitat inicial `v0 = 0 m/s`
 - Gravetat `g = 9.81 m/s²`
-- Angle pla inclinat `θ = 25°`
+- Angle pla inclinat `θ = 30°`
 - El cos comença a una distància de 3m del terra
 - Coeficient de fricció `μ = 0.2`
