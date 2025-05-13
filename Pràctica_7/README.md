@@ -151,7 +151,7 @@ Simular el moviment d’un objecte per un pla inclinat, tenint en compte la fric
 - El cos comença a una distància de 3m del terra
 - Coeficient de fricció `μ = 0.2`
 
-**Objectes inicials**:
+## Objectes inicials pla inclinat
 
 ```python
 import bpy
