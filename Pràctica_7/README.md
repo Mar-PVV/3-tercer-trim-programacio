@@ -150,3 +150,39 @@ Simular el moviment d’un objecte per un pla inclinat, tenint en compte la fric
 - Angle pla inclinat `θ = 30°`
 - El cos comença a una distància de 3m del terra
 - Coeficient de fricció `μ = 0.2`
+
+**Objectes inicials**:
+
+```python
+import bpy
+import math
+
+bpy.ops.object.select_all(action='SELECT')
+bpy.ops.object.delete(use_global=True)
+
+
+bpy.ops.mesh.primitive_cube_add(location=(0,0,5+(1/math.cos(math.pi/6))))
+bloc1 = bpy.context.object
+bloc1.rotation_euler = (0, math.pi/6, 0)
+
+bpy.ops.mesh.primitive_plane_add(location=(0,0,5), size = 20)
+pla = bpy.context.object
+pla.rotation_euler = (0, math.pi/6, 0)
+
+
+# Altres condicions del moviment de l'objecte
+
+# Condicions pel moviment amb Blender:
+fps = bpy.context.scene.render.fps
+interval = 1 / fps # En segons
+duracio = 30 #segons. En alguns casos no es necessitarà.
+
+
+for i in range(0, duracio * fps):  # Càlcul del moviment per cada fotograma de 0 al nombre total de fotogrames segons els segons de duració (duracio * fps). En alguns casos s'haurà de canviar el for per un altre tipus de bucle.
+
+    t = i * interval
+    
+    # Codi per moure l'objecte
+
+    bloc1.keyframe_insert(data_path="location", frame=i)
+```
