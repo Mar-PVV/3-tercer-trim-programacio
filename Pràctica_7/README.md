@@ -1,4 +1,4 @@
-# Pràctica 7: Forces amb Blender i Python
+# Pràctica 7: Forces amb Python i Blender
 
 ## Fórmules de referència
 
